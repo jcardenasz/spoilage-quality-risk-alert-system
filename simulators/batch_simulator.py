@@ -25,7 +25,28 @@ Output:
 import json
 import os
 import random
-from datetime import datetime, timedelta
+from datetime import datetime, timezone
+from pymongo import MongoClient
+
+# ---------------------------------------------------------------------------
+# MongoDB configuration
+# ---------------------------------------------------------------------------
+MONGO_URI = "mongodb://localhost:27017"
+MONGO_DATABASE = "spoilageandrisk"
+MONGO_COLLECTION = "batches"
+
+def get_mongodb_collection():
+    """
+    Connect to MongoDB and return the batches collection.
+    """
+
+    client = MongoClient(MONGO_URI)
+
+    db = client[MONGO_DATABASE]
+
+    collection = db[MONGO_COLLECTION]
+
+    return collection
 
 # ---------------------------------------------------------------------------
 # 1.  Material reference table  (PRD §2.1 "Materials Optimal Factors")
@@ -137,10 +158,11 @@ def generate_storage_days(material_name, risk_inducing=False):
 
 def generate_timestamp():
     """
-    Return a timestamp string for *today* (the POC runs in July 2026).
+    Return a real UTC datetime object.
+    MongoDB will store this as BSON Date.
     """
-    return datetime.now().strftime("%Y-%m-%dT%H:%M:%S")
 
+    return datetime.now(timezone.utc)
 
 # ---------------------------------------------------------------------------
 # 3.  Batch generator
@@ -181,6 +203,18 @@ def generate_batch(batch_id, risk_inducing=False):
         "timestamp": generate_timestamp(),
     }
 
+def save_batches_to_mongodb(batches):
+    """
+    Insert generated batches into MongoDB.
+    """
+
+    collection = get_mongodb_collection()
+
+    result = collection.insert_many(batches)
+
+    print(
+        f"Inserted {len(result.inserted_ids)} batches into MongoDB"
+    )
 
 # ---------------------------------------------------------------------------
 # 4.  Main entry point
@@ -202,15 +236,29 @@ def main(count=5):
         batches.append(batch)
 
     # Pretty-print to stdout for quick inspection
-    print(json.dumps(batches, indent=2))
+    print(
+        json.dumps(
+            batches,
+            indent=2,
+            default=lambda o: o.isoformat()
+        )
+    )
 
     # Persist to disk so n8n (or any consumer) can pick it up
     output_dir = os.path.join(os.path.dirname(__file__), "..", "data")
     os.makedirs(output_dir, exist_ok=True)
     output_path = os.path.join(output_dir, "generated_batches.json")
     with open(output_path, "w") as f:
-        json.dump(batches, f, indent=2)
+        json.dump(
+            batches,
+            f,
+            indent=2,
+            default=lambda o: o.isoformat()
+        )
     print(f"\nSaved {len(batches)} batches to {output_path}")
+
+    # Store batches in MongoDB
+    save_batches_to_mongodb(batches)
 
 
 if __name__ == "__main__":
