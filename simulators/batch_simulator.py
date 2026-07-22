@@ -27,6 +27,7 @@ import os
 import random
 from datetime import datetime, timezone
 from pymongo import MongoClient
+from pymongo import ReturnDocument
 
 # ---------------------------------------------------------------------------
 # MongoDB configuration
@@ -94,6 +95,22 @@ MATERIALS = {
 # ---------------------------------------------------------------------------
 # 2.  Helper functions
 # ---------------------------------------------------------------------------
+def get_next_batch_id():
+    """
+    Atomically get the next batch ID from MongoDB.
+    """
+
+    db = get_mongodb_collection().database
+
+    counter = db["counters"].find_one_and_update(
+        {"_id": "batch_id"},
+        {"$inc": {"sequence_value": 1}},
+        upsert=True,
+        return_document=ReturnDocument.AFTER
+    )
+
+    return counter["sequence_value"]
+
 def generate_container_conditions(risk_inducing=False):
     """
     Generate the *shared* storage conditions for a batch container.
@@ -229,7 +246,7 @@ def main(count=5):
     """
     batches = []
     for i in range(count):
-        batch_id = f"BATCH-{datetime.now().strftime('%Y%m%d')}-{i+1:03d}"
+        batch_id = get_next_batch_id()
         # ~20 % chance of a risk-inducing batch
         risk_inducing = random.random() < 0.20
         batch = generate_batch(batch_id, risk_inducing)

@@ -1,152 +1,152 @@
 [
   {
-    "batch_id": "BATCH-20260721-001",
-    "temperature": 25,
-    "humidity": 47,
-    "materials": [
-      {
-        "name": "flour",
-        "storage_days": 162
-      },
-      {
-        "name": "sugar",
-        "storage_days": 469
-      },
-      {
-        "name": "yeast",
-        "storage_days": 339
-      },
-      {
-        "name": "dairy_powder",
-        "storage_days": 229
-      },
-      {
-        "name": "cocoa",
-        "storage_days": 115
-      }
-    ],
-    "risk_number": 0,
-    "risk_statement": "",
-    "timestamp": "2026-07-21T23:21:10.829713+00:00"
-  },
-  {
-    "batch_id": "BATCH-20260721-002",
-    "temperature": 13,
-    "humidity": 47,
-    "materials": [
-      {
-        "name": "flour",
-        "storage_days": 160
-      },
-      {
-        "name": "sugar",
-        "storage_days": 473
-      },
-      {
-        "name": "yeast",
-        "storage_days": 423
-      },
-      {
-        "name": "dairy_powder",
-        "storage_days": 141
-      },
-      {
-        "name": "cocoa",
-        "storage_days": 591
-      }
-    ],
-    "risk_number": 0,
-    "risk_statement": "",
-    "timestamp": "2026-07-21T23:21:10.829745+00:00"
-  },
-  {
-    "batch_id": "BATCH-20260721-003",
-    "temperature": 33,
-    "humidity": 86,
-    "materials": [
-      {
-        "name": "flour",
-        "storage_days": 344
-      },
-      {
-        "name": "sugar",
-        "storage_days": 1781
-      },
-      {
-        "name": "yeast",
-        "storage_days": 653
-      },
-      {
-        "name": "dairy_powder",
-        "storage_days": 526
-      },
-      {
-        "name": "cocoa",
-        "storage_days": 901
-      }
-    ],
-    "risk_number": 0,
-    "risk_statement": "",
-    "timestamp": "2026-07-21T23:21:10.829770+00:00"
-  },
-  {
-    "batch_id": "BATCH-20260721-004",
-    "temperature": 24,
+    "batch_id": 11,
+    "temperature": 22,
     "humidity": 58,
     "materials": [
       {
         "name": "flour",
-        "storage_days": 72
+        "storage_days": 43
       },
       {
         "name": "sugar",
-        "storage_days": 33
+        "storage_days": 765
       },
       {
         "name": "yeast",
-        "storage_days": 351
+        "storage_days": 78
       },
       {
         "name": "dairy_powder",
-        "storage_days": 300
+        "storage_days": 86
       },
       {
         "name": "cocoa",
-        "storage_days": 106
+        "storage_days": 211
       }
     ],
     "risk_number": 0,
     "risk_statement": "",
-    "timestamp": "2026-07-21T23:21:10.829793+00:00"
+    "timestamp": "2026-07-22T00:34:27.128078+00:00"
   },
   {
-    "batch_id": "BATCH-20260721-005",
-    "temperature": 26,
-    "humidity": 66,
+    "batch_id": 12,
+    "temperature": 23,
+    "humidity": 56,
     "materials": [
       {
         "name": "flour",
-        "storage_days": 211
+        "storage_days": 215
       },
       {
         "name": "sugar",
-        "storage_days": 507
+        "storage_days": 772
       },
       {
         "name": "yeast",
-        "storage_days": 345
+        "storage_days": 48
       },
       {
         "name": "dairy_powder",
-        "storage_days": 166
+        "storage_days": 175
       },
       {
         "name": "cocoa",
-        "storage_days": 484
+        "storage_days": 128
       }
     ],
     "risk_number": 0,
     "risk_statement": "",
-    "timestamp": "2026-07-21T23:21:10.829814+00:00"
+    "timestamp": "2026-07-22T00:34:27.139320+00:00"
+  },
+  {
+    "batch_id": 13,
+    "temperature": 20,
+    "humidity": 31,
+    "materials": [
+      {
+        "name": "flour",
+        "storage_days": 153
+      },
+      {
+        "name": "sugar",
+        "storage_days": 218
+      },
+      {
+        "name": "yeast",
+        "storage_days": 275
+      },
+      {
+        "name": "dairy_powder",
+        "storage_days": 396
+      },
+      {
+        "name": "cocoa",
+        "storage_days": 370
+      }
+    ],
+    "risk_number": 0,
+    "risk_statement": "",
+    "timestamp": "2026-07-22T00:34:27.148712+00:00"
+  },
+  {
+    "batch_id": 14,
+    "temperature": 19,
+    "humidity": 64,
+    "materials": [
+      {
+        "name": "flour",
+        "storage_days": 157
+      },
+      {
+        "name": "sugar",
+        "storage_days": 865
+      },
+      {
+        "name": "yeast",
+        "storage_days": 280
+      },
+      {
+        "name": "dairy_powder",
+        "storage_days": 266
+      },
+      {
+        "name": "cocoa",
+        "storage_days": 451
+      }
+    ],
+    "risk_number": 0,
+    "risk_statement": "",
+    "timestamp": "2026-07-22T00:34:27.158521+00:00"
+  },
+  {
+    "batch_id": 15,
+    "temperature": 18,
+    "humidity": 52,
+    "materials": [
+      {
+        "name": "flour",
+        "storage_days": 188
+      },
+      {
+        "name": "sugar",
+        "storage_days": 61
+      },
+      {
+        "name": "yeast",
+        "storage_days": 378
+      },
+      {
+        "name": "dairy_powder",
+        "storage_days": 146
+      },
+      {
+        "name": "cocoa",
+        "storage_days": 317
+      }
+    ],
+    "risk_number": 0,
+    "risk_statement": "",
+    "timestamp": "2026-07-22T00:34:27.168238+00:00"
   }
 ]
