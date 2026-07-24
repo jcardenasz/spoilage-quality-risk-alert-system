@@ -57,8 +57,4 @@ This system monitors raw material batches through automated workflows using n8n,
 
 ---
 
-*Made by Juan Camilo Cardenas Zabala*
-
----
-
-*Document generated on 2026-07-23*
+*Made by Juan Camilo Cardenas Zabala. Document generated on 2026-07-23*

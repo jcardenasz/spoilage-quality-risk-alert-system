@@ -1,110 +1,110 @@
 [
   {
-    "batch_id": 16,
-    "temperature": 13,
-    "humidity": 67,
+    "batch_id": 1,
+    "temperature": 33,
+    "humidity": 82,
     "materials": [
       {
         "name": "flour",
-        "storage_days": 60
+        "storage_days": 374
       },
       {
         "name": "sugar",
-        "storage_days": 599
+        "storage_days": 1278
       },
       {
         "name": "yeast",
-        "storage_days": 68
+        "storage_days": 731
       },
       {
         "name": "dairy_powder",
-        "storage_days": 244
+        "storage_days": 585
       },
       {
         "name": "cocoa",
-        "storage_days": 408
+        "storage_days": 1071
       }
     ],
     "risk_number": 0,
     "risk_statement": "",
-    "timestamp": "2026-07-24T00:17:36.826179+00:00"
+    "timestamp": "2026-07-24T15:31:25.775086+00:00"
   },
   {
-    "batch_id": 17,
-    "temperature": 12,
-    "humidity": 64,
+    "batch_id": 2,
+    "temperature": 37,
+    "humidity": 81,
     "materials": [
       {
         "name": "flour",
-        "storage_days": 89
+        "storage_days": 287
       },
       {
         "name": "sugar",
-        "storage_days": 361
+        "storage_days": 1793
       },
       {
         "name": "yeast",
-        "storage_days": 417
+        "storage_days": 641
       },
       {
         "name": "dairy_powder",
-        "storage_days": 241
+        "storage_days": 703
       },
       {
         "name": "cocoa",
-        "storage_days": 213
+        "storage_days": 1149
       }
     ],
     "risk_number": 0,
     "risk_statement": "",
-    "timestamp": "2026-07-24T00:17:36.837115+00:00"
+    "timestamp": "2026-07-24T15:31:25.785685+00:00"
   },
   {
-    "batch_id": 18,
-    "temperature": 34,
+    "batch_id": 3,
+    "temperature": 37,
     "humidity": 85,
     "materials": [
       {
         "name": "flour",
-        "storage_days": 315
+        "storage_days": 264
       },
       {
         "name": "sugar",
-        "storage_days": 1387
+        "storage_days": 1141
       },
       {
         "name": "yeast",
-        "storage_days": 648
+        "storage_days": 721
       },
       {
         "name": "dairy_powder",
-        "storage_days": 678
+        "storage_days": 745
       },
       {
         "name": "cocoa",
-        "storage_days": 1094
+        "storage_days": 1178
       }
     ],
     "risk_number": 0,
     "risk_statement": "",
-    "timestamp": "2026-07-24T00:17:36.870370+00:00"
+    "timestamp": "2026-07-24T15:31:25.795528+00:00"
   },
   {
-    "batch_id": 19,
-    "temperature": 21,
-    "humidity": 59,
+    "batch_id": 4,
+    "temperature": 22,
+    "humidity": 44,
     "materials": [
       {
         "name": "flour",
-        "storage_days": 193
+        "storage_days": 149
       },
       {
         "name": "sugar",
-        "storage_days": 210
+        "storage_days": 475
       },
       {
         "name": "yeast",
-        "storage_days": 222
+        "storage_days": 212
       },
       {
         "name": "dairy_powder",
@@ -112,41 +112,41 @@
       },
       {
         "name": "cocoa",
-        "storage_days": 521
+        "storage_days": 99
       }
     ],
     "risk_number": 0,
     "risk_statement": "",
-    "timestamp": "2026-07-24T00:17:36.880395+00:00"
+    "timestamp": "2026-07-24T15:31:25.805707+00:00"
   },
   {
-    "batch_id": 20,
-    "temperature": 23,
-    "humidity": 40,
+    "batch_id": 5,
+    "temperature": 19,
+    "humidity": 67,
     "materials": [
       {
         "name": "flour",
-        "storage_days": 108
+        "storage_days": 42
       },
       {
         "name": "sugar",
-        "storage_days": 348
+        "storage_days": 685
       },
       {
         "name": "yeast",
-        "storage_days": 373
+        "storage_days": 155
       },
       {
         "name": "dairy_powder",
-        "storage_days": 355
+        "storage_days": 98
       },
       {
         "name": "cocoa",
-        "storage_days": 410
+        "storage_days": 261
       }
     ],
     "risk_number": 0,
     "risk_statement": "",
-    "timestamp": "2026-07-24T00:17:36.889498+00:00"
+    "timestamp": "2026-07-24T15:31:25.816020+00:00"
   }
 ]

@@ -3,7 +3,9 @@ APRENDIZAJES HASTA EL MOMENTO:
 
 2. Conocer cada paso del proceso y sus necesidades. Desde conocer cada parte del problema y cada fase de desarrollo hasta definir exactamente cuales son las entradas y salidas de cada parte, estandar de datos y transmisión, entre otros.
 
-3. Leí en un foro de reddit que Claude code funciona mejor en Linux que en Windows, por lo que lo utilizo en la consola de linux que proporciona WSL.
+3. Leí en un foro de reddit que Claude code funciona mejor en Linux que en Windows, por lo que lo utilizo en la consola de linux que proporciona WSL (además me gusta bash)
+
+4. Los archivos CLAUDE.md, spec.md y otros son esenciales tanto para documentar, como para que la IA tenga las bases para realizar diferentes tareas en el proyecto.
 
 ACCIONES REALIZADAS:
 
@@ -15,3 +17,16 @@ ACCIONES REALIZADAS:
 6. Comencé con la realización de la función generadora de batches y me di cuenta que claude code con estos tokens gratis genera errores y le cuesta mucho corregirlos. Llegué al límite de modelos gratis del día, es frustrante.
 7. Dado el formato de los datos generados por el simulador, se decide cambiar de usar una base de datos como AIRTABLE, por MongoDB, debido a que el estilo es muy similar a un documento de mongo.
 8. Crear un paso a mano en el workflow de n8n para leer los datos de la base de datos de mongo para luego insertar cada batch en un programa que preprocesa los datos para que el Agente de IA tenga información más precisa.
+9. Configurar tanto el prompt de la IA como el resultado en formato JSON, para que estudie los lotes y ponga riesgos.
+10. Configurar el guardado de los riesgos y explicaciones dadas por la IA sus respectivos los lotes existentes en la base de datos.
+11. Crear y configurar un paso de decisión donde se estudia el numero de riesgo, si es mayor o igual a 2 se envía un correo por medio de gmail a un correo definido (el mío), informando el numero de lote, riesgo y explicación.
+
+STACK TECNOLÓGICO:
+- Claude code
+- Chat gpt
+- n8n
+- prompt cowboy
+- Docker
+- Python
+- MongoDB
+- Gmail (n8n)

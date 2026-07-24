@@ -19,9 +19,9 @@ Este sistema monitorea lotes de materias primas a través de flujos de trabajo a
 | Componente | Propósito | Ubicación del Archivo |
 |------------|-----------|----------------------|
 | Simulador de Lotes | Genera conjuntos de datos realistas para pruebas | `simulators/batch_simulator.py` |
-| Pre-procesador | Valida datos de lotes contra límites de materiales | `processor/pre-processor.py` |
-| Agente de IA | Procesa desviaciones y asigna categorías de riesgo | `agent/agent.py` |
-| Programador de Alertas | Envía notificaciones por email/Slack | `alerts/alert_scheduler.py` |
+| Pre-procesador | Valida datos de lotes contra límites de materiales (nodo n8n) | `processor/pre-processor.py` |
+| Agente de IA | Procesa desviaciones y asigna categorías de riesgo (nodo n8n) | `agent/agent.py` |
+| Programador de Alertas | Envía notificaciones por email/Slack (n8n) | `alerts/alert_scheduler.py` |
 
 ---
 
@@ -54,11 +54,8 @@ Este sistema monitorea lotes de materias primas a través de flujos de trabajo a
 - Ver `processor/spec.md` para documentación del pre-procesador
 - Ver `simulators/spec.md` para documentación del simulador
 - Ver `agent/spec.md` para especificación del agente de IA
+- Ver `n8n/spoilageAndRiskWorkflow.json` para ver el archivo de configuración del flujo de trabajo n8n.
 
 ---
 
-*Desarrollado por Juan Camilo Cardenas Zabala*
-
----
-
-*Documento generado el 23 de julio de 2026*
+*Desarrollado por Juan Camilo Cardenas Zabala. Documento generado el 23 de julio de 2026*
