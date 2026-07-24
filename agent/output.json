@@ -1,0 +1,9 @@
+[
+    {
+        "output": {
+            "batch_id": 1,
+            "risk_number": 3,
+            "risk_statement": "Cocoa humidity is 30 points above its 50% limit, while dairy_powder and yeast are both 20 points over their 60% limit. Additionally, the container temperature is running 10°C above the ideal maximum for both cocoa and dairy_powder. An alert has been issued; immediate inspection is required before batch release."
+        }
+    }
+]

@@ -71,3 +71,7 @@ As the project evolves beyond the POC, we may introduce:
 4. Set up the data storage and alerting nodes.
 5. Test the end-to-end workflow with sample data.
 6. Implement the conversational Q&A agent (Phase 2).
+
+## Always
+
+Write spec.md and other files so the user has information about the process and where he can see decisions, tasks made, prompts and all relevant information for a SDD project.

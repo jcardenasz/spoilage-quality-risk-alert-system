@@ -14,3 +14,4 @@ ACCIONES REALIZADAS:
 5. Definí la ruta de acción del proceso (con un diagrama de flujo) y luego analicé y definí los thresholds de los riesgos, para que luego el agente de IA pueda tener el prompt indicado.
 6. Comencé con la realización de la función generadora de batches y me di cuenta que claude code con estos tokens gratis genera errores y le cuesta mucho corregirlos. Llegué al límite de modelos gratis del día, es frustrante.
 7. Dado el formato de los datos generados por el simulador, se decide cambiar de usar una base de datos como AIRTABLE, por MongoDB, debido a que el estilo es muy similar a un documento de mongo.
+8. Crear un paso a mano en el workflow de n8n para leer los datos de la base de datos de mongo para luego insertar cada batch en un programa que preprocesa los datos para que el Agente de IA tenga información más precisa.

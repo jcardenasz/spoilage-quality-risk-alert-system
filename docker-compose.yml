@@ -14,10 +14,26 @@ services:
     restart: unless-stopped
     ports:
       - "5678:5678"
+    environment:
+      - N8N_RUNNERS_ENABLED=true
+      - N8N_RUNNERS_MODE=external
+      - N8N_RUNNERS_BROKER_LISTEN_ADDRESS=0.0.0.0
+      - N8N_RUNNERS_AUTH_TOKEN=this_is_the_best_random_secret_ive_seen_in_my_life
+      - N8N_NATIVE_PYTHON_RUNNER=true
     volumes:
       - n8n_data:/home/node/.n8n
     depends_on:
       - mongodb
+
+  n8n-task-runner:
+    image: n8nio/runners:latest        # Docker Hub — no docker.n8n.io prefix
+    container_name: n8n-task-runner
+    restart: unless-stopped
+    environment:
+      - N8N_RUNNERS_AUTH_TOKEN=this_is_the_best_random_secret_ive_seen_in_my_life
+      - N8N_RUNNERS_TASK_BROKER_URI=http://n8n:5679
+    depends_on:
+      - n8n
 
 volumes:
   mongodb_data:

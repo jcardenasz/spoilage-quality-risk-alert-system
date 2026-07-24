@@ -362,3 +362,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+#n8n
+spoilageAndRiskWorkflow.json
